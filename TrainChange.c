@@ -95,3 +95,8 @@ int main() {
 		}
 		count = p[count];
 	}
+printf("%s\n", Station[s]);
+
+	return 0;
+}
+
