@@ -70,16 +70,16 @@ void bfs(int s, int f) {
 
 int main() {
 	int count = 0, n, count2, id, num, f, s;
-	scanf_s("%d", &n);
+	scanf("%d", &n);
 	for (count; count < n; count++) {
-		scanf_s("%d %d", &id, &num);
+		scanf("%d %d", &id, &num);
 		for (count2 = 0; count2 < num; count2++) {
-			scanf_s("%d", &M[id][count2]);
-			scanf_s("%d", &rail[id][M[id][count2]]);
+			scanf("%d", &M[id][count2]);
+			scanf("%d", &rail[id][M[id][count2]]);
 		}
 
 	}
-	scanf_s("%d %d", &f, &s);
+	scanf("%d %d", &f, &s);
 
 	bfs(s, f);
 
